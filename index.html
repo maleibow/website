@@ -34,21 +34,14 @@
         section[id] {
             scroll-margin-top: 5rem; 
         }
-        /* Style for the iframe preview of collages.html */
-        .collage-preview-iframe {
-            width: 100%;
-            height: 210px; 
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius-lg);
-            box-shadow: var(--shadow-sm);
-        }
+        
         /* Style for clickable project titles that trigger modals */
         .project-title-trigger {
             cursor: pointer;
-            display: inline-block; /* Allows hover effects if added via CSS */
+            display: inline-block; 
         }
         .project-title-trigger:hover {
-            color: var(--accent-color); /* Uses accent color from style.css */
+            color: var(--accent-color); 
             text-decoration: underline;
         }
     </style>
@@ -85,7 +78,7 @@
 
         <section id="about-section" class="bg-white p-6 md:p-8 lg:p-12 rounded-lg shadow-md my-8 md:my-12">
             <div class="flex flex-col md:flex-row items-start md:gap-8">
-                <img src="https://placehold.co/200x200/e2e8f0/1a202c?text=ML" alt="Matthew M. Leibowitz Profile Picture" class="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg mb-6 md:mb-0 object-cover flex-shrink-0 mx-auto md:mx-0">
+                <img src="https://www.dropbox.com/scl/fi/ag84yx037hghie51qva7t/00127.jpg?rlkey=rm5o03g3pj0jvgdp0iag6zoum&st=rr03lzc4&raw=1" alt="Matthew M. Leibowitz Profile Picture" class="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg mb-6 md:mb-0 object-cover flex-shrink-0 mx-auto md:mx-0" onerror="this.onerror=null;this.src='https://placehold.co/200x200/e2e8f0/1a202c?text=ML';">
                 <div class="flex-grow">
                     <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-4">About Me</h2>
                     <p class="text-secondary text-base lg:text-lg mb-4">
@@ -109,61 +102,59 @@
             
             <div class="space-y-10 md:space-y-12">
                 <div id="project_totinos" class="project-card bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col md:flex-row items-start gap-6">
-                    <img src="https://i.ytimg.com/vi/rXlxIF-sIg4/hqdefault.jpg" alt="Totino's: Pete's Za Party Thumbnail" class="w-full md:w-1/3 h-auto rounded-md shadow-sm object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e5e7eb/4a5568?text=Totino%27s+Video';">
+                    <img src="https://i.ytimg.com/vi/rXlxIF-sIg4/hqdefault.jpg" alt="Totino's: Pete's Za Party Thumbnail" class="w-full md:w-1/3 h-auto max-h-[210px] object-cover rounded-md shadow-sm" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e5e7eb/4a5568?text=Totino%27s+Video';">
                     <div class="project-details md:w-2/3">
-                        <h3 data-type="youtube" data-src="https://youtu.be/rXlxIF-sIg4?si=YtIbi3wj7u3cfdvd" class="modal-trigger project-title-trigger text-xl md:text-2xl font-semibold text-primary mb-1">Totino's: Pete's Za Party</h3>
+                        <h3 data-type="youtube" data-src="https://www.youtube.com/watch?v=VIDEO_ID6" class="modal-trigger project-title-trigger text-xl md:text-2xl font-semibold text-primary mb-1">Totino's: Pete's Za Party</h3>
                         <p class="text-sm text-subtle-text-color mb-3">Category: Production Sound Mixing</p>
                         <p class="text-secondary text-sm mb-4">
                             Served as the Production Sound Mixer for the "Pete's Za Party" commercial for Totino's. 
                             Responsible for capturing clear and high-quality audio on set.
                         </p>
                         <div class="mt-auto">
-                            <button data-type="youtube" data-src="https://youtu.be/rXlxIF-sIg4?si=YtIbi3wj7u3cfdvd" class="modal-trigger bg-accent text-white px-4 py-2 rounded-md text-sm font-medium">View Details</button>
+                            <button data-type="youtube" data-src="https://www.youtube.com/watch?v=VIDEO_ID6" class="modal-trigger bg-accent text-white px-4 py-2 rounded-md text-sm font-medium">View Details</button>
                         </div>
                     </div>
                 </div>
 
                 <div id="project_nyt" class="project-card bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col md:flex-row items-start gap-6">
-                     <img src="https://i.ytimg.com/vi/9y2WezKYgo4/hqdefault.jpg" alt="NYT Cooking: Food Waste Thumbnail" class="w-full md:w-1/3 h-auto rounded-md shadow-sm object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e5e7eb/4a5568?text=NYT+Cooking';">
+                     <img src="https://i.ytimg.com/vi/9y2WezKYgo4/hqdefault.jpg" alt="NYT Cooking: Food Waste Thumbnail" class="w-full md:w-1/3 h-auto max-h-[210px] object-cover rounded-md shadow-sm" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e5e7eb/4a5568?text=NYT+Cooking';">
                     <div class="project-details md:w-2/3">
-                        <h3 data-type="youtube" data-src="https://www.youtube.com/watch?v=9y2WezKYgo4" class="modal-trigger project-title-trigger text-xl md:text-2xl font-semibold text-primary mb-1">What Happens to NYC's Food Waste? | On the Job | Priya Krishna | NYT Cooking</h3>
+                        <h3 data-type="youtube" data-src="https://www.youtube.com/watch?v=VIDEO_ID7" class="modal-trigger project-title-trigger text-xl md:text-2xl font-semibold text-primary mb-1">What Happens to NYC's Food Waste? | On the Job | Priya Krishna | NYT Cooking</h3>
                         <p class="text-sm text-subtle-text-color mb-3">Category: Production Sound Mixing | Client: NYT Cooking</p>
                         <p class="text-secondary text-sm mb-4">
                             Production Sound Mixer for this insightful segment of NYT Cooking's "On the Job" series featuring Priya Krishna. Directed by Amanda Choy.
                         </p>
                          <div class="mt-auto">
-                            <button data-type="youtube" data-src="https://www.youtube.com/watch?v=9y2WezKYgo4" class="modal-trigger bg-accent text-white px-4 py-2 rounded-md text-sm font-medium">Watch Segment</button>
+                            <button data-type="youtube" data-src="https://www.youtube.com/watch?v=VIDEO_ID7" class="modal-trigger bg-accent text-white px-4 py-2 rounded-md text-sm font-medium">Watch Segment</button>
                         </div>
                     </div>
                 </div>
                 
                 <div id="project_evening_song" class="project-card bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col md:flex-row items-start gap-6">
-                    <img src="https://placehold.co/300x200/e5e7eb/4a5568?text=Evening+Song" alt="An Evening Song Thumbnail" class="w-full md:w-1/3 h-auto rounded-md shadow-sm object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e5e7eb/4a5568?text=Evening+Song';">
+                    <img src="https://i.ytimg.com/vi/VXaOQWb8a7c/hqdefault.jpg" alt="An Evening Song Thumbnail" class="w-full md:w-1/3 h-auto max-h-[210px] object-cover rounded-md shadow-sm" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e5e7eb/4a5568?text=Evening+Song+Video';">
                     <div class="project-details md:w-2/3">
-                        <h3 data-type="youtube" data-src="https://www.youtube.com/embed/VIDEO_ID_EVENING_SONG" class="modal-trigger project-title-trigger text-xl md:text-2xl font-semibold text-primary mb-1">An Evening Song (for Three Voices) (First Look 2024)</h3>
+                        <h3 data-type="youtube" data-src="https://www.youtube.com/embed/9y2WezKYgo4?si=MuGof91eAF_VZb-m" class="modal-trigger project-title-trigger text-xl md:text-2xl font-semibold text-primary mb-1">An Evening Song (for Three Voices) (First Look 2024)</h3>
                         <p class="text-sm text-subtle-text-color mb-3">Category: Production Sound Mixing | Film</p>
                         <p class="text-secondary text-sm mb-4">
                            Production Sound Mixer for the film "An Evening Song (for Three Voices)". Director: Graham Swon. Cinematographer: Bart Cortright.
                         </p>
                         <div class="mt-auto">
-                            <button data-type="youtube" data-src="https://www.youtube.com/embed/VIDEO_ID_EVENING_SONG" class="modal-trigger bg-accent text-white px-4 py-2 rounded-md text-sm font-medium">View Trailer</button>
+                            <button data-type="youtube" data-src="https://www.youtube.com/embed/9y2WezKYgo4?si=MuGof91eAF_VZb-m" class="modal-trigger bg-accent text-white px-4 py-2 rounded-md text-sm font-medium">View Trailer</button>
                         </div>
                     </div>
                 </div>
 
                 <div id="project_collages" class="project-card bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col md:flex-row items-start gap-6">
-                    <div class="w-full md:w-1/3">
-                         <iframe src="collages.html" title="Collages Preview" class="collage-preview-iframe" loading="lazy"></iframe>
-                    </div>
+                    <a href="collages.html" target="_blank" rel="noopener noreferrer" class="w-full md:w-1/3 block">
+                        <img src="https://www.dropbox.com/scl/fi/ct6g4eivn84ybocvy0sb1/A-Funeral.jpg?rlkey=g3srjtt6bnyo9d5q613fk8cla&st=bgpx21c6&raw=1" alt="Collage Preview" class="w-full h-auto max-h-[210px] object-cover rounded-md shadow-sm" onerror="this.onerror=null;this.src='https://placehold.co/300x210/e5e7eb/4a5568?text=Collages';">
+                    </a>
                     <div class="project-details md:w-2/3">
                         <h3 class="text-xl md:text-2xl font-semibold text-primary mb-1">
                             <a href="collages.html" target="_blank" rel="noopener noreferrer" class="hover:text-accent hover:underline">Collages</a>
                         </h3>
                         <p class="text-sm text-subtle-text-color mb-3">Category: Visual Art</p>
                         <p class="text-secondary text-sm mb-4">
-                           A selection of my collage art. 
-                           The preview above shows a scrollable gallery. You can also 
-                           <a href="collages.html" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">view the full collages page</a>.
+                           A selection of my collage art. Click to view the full gallery.
                         </p>
                          <div class="mt-auto">
                             <a href="collages.html" target="_blank" rel="noopener noreferrer" class="bg-accent text-white px-4 py-2 rounded-md text-sm font-medium inline-block">View Full Gallery</a>
@@ -172,7 +163,9 @@
                 </div>
                 
                 <div id="project_secret_voicemail" class="project-card bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col md:flex-row items-start gap-6">
-                    <img src="https://i1.sndcdn.com/avatars-000227421880-1ofq7n-t500x500.jpg" alt="Secret Voicemail Project Thumbnail" class="w-full md:w-1/3 h-auto rounded-md shadow-sm object-cover" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e5e7eb/4a5568?text=Secret+Voicemail';">
+                    <a href="https://soundcloud.com/secretvoicemail" target="_blank" rel="noopener noreferrer" class="w-full md:w-1/3 block">
+                        <img src="https://i1.sndcdn.com/avatars-000227421880-1ofq7n-t500x500.jpg" alt="Secret Voicemail Project Thumbnail" class="w-full h-auto max-h-[210px] object-cover rounded-md shadow-sm" onerror="this.onerror=null;this.src='https://placehold.co/300x210/e5e7eb/4a5568?text=Secret+Voicemail';">
+                    </a>
                     <div class="project-details md:w-2/3">
                         <h3 class="text-xl md:text-2xl font-semibold text-primary mb-1">
                             <a href="https://soundcloud.com/secretvoicemail" target="_blank" rel="noopener noreferrer" class="hover:text-accent hover:underline">Secret Voicemail</a>
@@ -392,18 +385,11 @@
 
             triggerButtons.forEach(button => {
                 button.addEventListener('click', (event) => {
-                    // For regular buttons, prevent default if it's a form submit button, though not strictly necessary here
-                    // if (button.type === 'button' || button.tagName.toLowerCase() === 'button') {
-                    //     event.preventDefault(); 
-                    // }
-                    // For title triggers that are now h3, we don't need preventDefault unless they were anchors.
-
                     const data = { ...button.dataset }; 
                     
                     if (modalId === 'mediaModal') { 
                         const projectCard = button.closest('.project-card');
                         data.title = projectCard?.querySelector('.project-details h3')?.textContent || 'Media Preview';
-                         // If the H3 itself is the trigger, its textContent is the title
                         if(button.classList.contains('project-title-trigger')) {
                             data.title = button.textContent;
                         }
@@ -412,7 +398,6 @@
                         data.alt = button.alt;
                         data.title = button.alt || 'Collage Detail';
                     }
-
 
                     if (data.src || (data.type && data.src)) {
                         openTheModal(data);
@@ -438,11 +423,11 @@
             if(modalTitleEl) modalTitleEl.textContent = data.title || 'Media Preview';
 
             if (data.type === 'youtube') {
-                if (data.src && (data.src.includes('youtube.com/embed/') || data.src.includes('youtube.com/embed/'))) { 
+                if (data.src) { // Directly use data.src, assuming it's a correct embed URL
                      embedContent = `<iframe class="w-full aspect-video" src="${data.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
                 } else {
-                    console.warn('YouTube URL might not be an embed URL or pattern mismatch, attempting to use it:', data.src);
-                    embedContent = `<iframe class="w-full aspect-video" src="${data.src}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+                    console.error('YouTube data.src is missing.');
+                    embedContent = '<p class="text-red-600 p-4">Error: YouTube video source is missing.</p>';
                 }
             } else if (data.type === 'audio') {
                 embedContent = `<audio controls class="w-full mt-2" src="${data.src}">Your browser does not support the audio element.</audio>`;
