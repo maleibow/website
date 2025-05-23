@@ -1,0 +1,361 @@
+/* FILE: style.css (Consolidated & Corrected for Carousel) */
+
+/* --- Base & Typography --- */
+:root {
+    --primary-color: #1a202c;   /* Dark gray for primary text, headings */
+    --secondary-color: #2d3748; /* Slightly lighter gray for body text */
+    --accent-color: #3b82f6;    /* A vibrant blue for links and highlights */
+    --accent-hover-color: #2563eb; /* Darker blue for hover states */
+    --background-color: #f9fafb; /* Very light gray, almost white, for main background */
+    --card-bg-color: #ffffff;   /* White for cards and distinct sections */
+    --border-color: #e5e7eb;    /* Light gray for borders */
+    --highlight-bg-color: #eff6ff; /* Light blue for active nav link background */
+    --subtle-text-color: #6b7280; /* Medium gray for less important text (e.g., dates, categories) */
+
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --border-radius: 0.375rem; /* 6px, Tailwind's rounded-md */
+    --border-radius-lg: 0.5rem; /* 8px, Tailwind's rounded-lg */
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%; 
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--background-color);
+    color: var(--secondary-color); 
+    line-height: 1.7; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 4.5rem; /* Account for sticky header height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 700; 
+    line-height: 1.3;
+    margin-bottom: 0.5em; 
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-hover-color);
+    text-decoration: underline;
+}
+
+/* --- Header & Navigation --- */
+header.bg-white { 
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+header .text-2xl.font-bold { 
+    color: var(--primary-color);
+}
+
+header nav a {
+    position: relative;
+    padding: 0.5rem 0.75rem; 
+    font-weight: 500;
+    color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    transition: color 0.2s ease, background-color 0.2s ease; 
+}
+
+header nav a:hover {
+    color: var(--accent-color);
+    background-color: var(--highlight-bg-color);
+    text-decoration: none;
+}
+
+header nav a.bg-highlight { 
+    background-color: var(--highlight-bg-color) !important; 
+    color: var(--accent-color) !important;
+    font-weight: 600;
+}
+
+/* --- Main Content & Sections --- */
+main.container {
+    padding-top: 2.5rem; 
+    padding-bottom: 2.5rem;
+}
+
+/* --- Card Styling (for projects, featured items) --- */
+.project-card.bg-white { 
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg); 
+    box-shadow: var(--shadow-md);
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.project-card.bg-white:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* --- Buttons --- */
+button.bg-accent, a.bg-accent { 
+    background-color: var(--accent-color) !important; 
+    color: white !important;
+    font-weight: 500; 
+    padding: 0.625rem 1.25rem; 
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease-in-out, transform 0.15s ease-in-out;
+    box-shadow: var(--shadow-sm);
+}
+
+button.bg-accent:hover, a.bg-accent:hover {
+    background-color: var(--accent-hover-color) !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+}
+
+button.border-accent, a.border-accent {
+    border-color: var(--accent-color) !important;
+    color: var(--accent-color) !important;
+    font-weight: 500;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.15s ease-in-out;
+}
+
+button.border-accent:hover, a.border-accent:hover {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+
+/* --- Footer --- */
+footer.bg-secondary { 
+    background-color: var(--primary-color); 
+    color: #a0aec0; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer a {
+    color: #cbd5e0; 
+}
+footer a:hover {
+    color: white;
+}
+
+/* --- Form Elements (Contact Page) --- */
+input[type="text"],
+input[type="email"],
+textarea { 
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.625rem 1rem; 
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%; 
+    margin-top: 0.25rem; 
+    box-shadow: var(--shadow-sm);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3); 
+    outline: none;
+}
+
+/* --- General Modal Styles --- */
+.modal-overlay {
+    transition: opacity 0.3s ease-in-out;
+    z-index: 100; 
+}
+
+.modal-content { 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background-color: var(--card-bg-color); 
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    z-index: 110; 
+}
+
+
+/* --- Media Modal (#mediaModal) Specific Enhancements --- */
+#mediaModal .modal-content {
+    border-top: 3px solid var(--accent-color);
+}
+
+#mediaModal #closeMediaModal { 
+    font-size: 1.75rem;
+    color: var(--subtle-text-color);
+    transition: color 0.2s ease;
+}
+#mediaModal #closeMediaModal:hover {
+    color: var(--primary-color);
+}
+
+/* --- Collage Carousel Styles (CRITICAL FOR ONE-AT-A-TIME DISPLAY) --- */
+.project-card#project_collages { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.collage-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; 
+    margin-left: auto;  
+    margin-right: auto;
+    overflow: hidden !important;  /* CRITICAL: Ensures other slides are hidden */
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    background-color: #f0f0f0; 
+}
+
+.collage-carousel-slides {
+    display: flex !important; /* CRITICAL: Arranges slides horizontally */
+    transition: transform 0.5s ease-in-out;
+    height: 180px; /* UPDATED: Reduced height for smaller thumbnails */
+}
+
+.collage-carousel-slide {
+    min-width: 100% !important; /* CRITICAL: Each slide takes full width */
+    flex-shrink: 0 !important;  /* CRITICAL: Prevents slides from shrinking */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem; 
+    background-color: var(--card-bg-color); 
+}
+
+.collage-carousel-slide img.collage-thumbnail { 
+    display: block;
+    max-width: 100%;
+    max-height: 100%; 
+    width: auto;  
+    height: auto;  
+    object-fit: contain; 
+    border-radius: var(--border-radius); 
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.collage-carousel-slide img.collage-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.collage-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+    border: none;
+    padding: 0.5rem 0.75rem; 
+    cursor: pointer;
+    border-radius: 50%; 
+    z-index: 10; 
+    font-size: 1.25rem; 
+    line-height: 1;
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.collage-carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.collage-carousel-button.prev {
+    left: 10px;
+}
+
+.collage-carousel-button.next {
+    right: 10px;
+}
+
+/* --- Collage Detail Modal (#collageDetailModal) Styles --- */
+#collageDetailModal .modal-content { 
+    max-width: 90vw; 
+    max-height: 90vh;
+    width: auto; 
+    height: auto; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    backdrop-filter: blur(5px);
+    z-index: 160; 
+}
+
+#collageDetailModalBody { 
+    width: auto; 
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#collageDetailModalBody img {
+    display: block;
+    max-width: 100%; 
+    max-height: calc(90vh - 60px); 
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+}
+
+#closeCollageDetailModal {
+    position: absolute;
+    top: 15px; 
+    right: 15px;
+    font-size: 1.8rem; 
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    z-index: 170; 
+}
+#closeCollageDetailModal:hover {
+    color: var(--accent-hover-color);
+    background-color: rgba(230, 230, 230, 1);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body { 
+        padding-top: 4rem; 
+    }
+}

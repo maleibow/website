@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collages - Matthew M. Leibowitz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Styles specific to this collages page, if any. 
+           Most carousel styles should be in the main style.css */
+        body {
+            background-color: var(--background-color); /* Use variable from style.css */
+            padding-top: 1rem; /* Less padding if no sticky header on this page */
+        }
+        .page-title {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+         /* Ensure carousel container itself is centered if it has a max-width */
+        .collage-carousel-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 md:p-8">
+
+    <h1 class="text-3xl md:text-4xl font-bold page-title">My Collages</h1>
+    <p class="text-center text-secondary mb-8 max-w-xl mx-auto">
+        A selection of my collage art. Click thumbnails to enlarge. Use the arrows to navigate through the images.
+    </p>
+
+    <div class="collage-carousel-container">
+        <div class="collage-carousel-slides" id="collageSlides">
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/ct6g4eivn84ybocvy0sb1/A-Funeral.jpg?rlkey=g3srjtt6bnyo9d5q613fk8cla&st=bgpx21c6&raw=1" alt="Collage: A Funeral" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/y2gxtj545r3cjcx1bq6gy/A-Monopoly-of-Windows-cropped.jpg?rlkey=axf58oj9swbbqf2skor9astwp&st=91prep76&raw=1" alt="Collage: A Monopoly of Windows" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/lcgf2ez8fd48mq3xu2ovt/A-Poets-Work.jpg?rlkey=jo8sikz63uqxbezv95b2vzxc6&st=61w7tgzo&raw=1" alt="Collage: A Poet's Work" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/625bbmdk067ntephdtco8/All-Was-Not-Lost.jpg?rlkey=p1q81qidej0zw1cb4qecq2wxm&st=clwakpa4&raw=1" alt="Collage: All Was Not Lost" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/jqy2z3o11vql6win6nl0f/Ancestors.jpg?rlkey=nudq1o8774vti7akwnafrhocs&st=br7pp5vu&raw=1" alt="Collage: Ancestors" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/6vdo2fmqi6cmwg1jl4t72/Bloody-Knees.jpg?rlkey=ybqlu53gcoqhn8ntc4plq139t&st=is10gh8f&raw=1" alt="Collage: Bloody Knees" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/6iu0o0ibnk1lgvha6a35d/Incredulous-Murmur.jpg?rlkey=p3td7n7jojz89im86yd6j0tcm&st=riz3mkaa&raw=1" alt="Collage: Incredulous Murmur" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/41vxusonyxy48vwm9xay9/Soft-Touch-Silent-Burial.jpg?rlkey=q7m88lydc57oxmae6iiohwru7&st=kzmpt02h&raw=1" alt="Collage: Soft Touch Silent Burial" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/bvkmntp84rkrotq7y7zd0/There-You-Will-See-No-Ghosts-Full.jpg?rlkey=yerxcibyfm2x391zicofgjsn8&st=o72zs5ft&raw=1" alt="Collage: There You Will See No Ghosts" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+            <div class="collage-carousel-slide">
+                <img src="https://www.dropbox.com/scl/fi/pxm1ueg8cwtmwu5kx8oi8/Unnamed-North-Dakota-Cowboy.jpg?rlkey=284nge6j1jfj5qk6mpvkfll76&st=6vkmpwkt&raw=1" alt="Collage: Unnamed North Dakota Cowboy" class="collage-thumbnail" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ccc/999?text=Error';">
+            </div>
+        </div>
+        <button class="collage-carousel-button prev" id="collagePrevBtn">❮</button>
+        <button class="collage-carousel-button next" id="collageNextBtn">❯</button>
+    </div>
+
+    <div id="collageDetailModal" class="modal-overlay fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-[150] hidden opacity-0">
+        <div class="modal-content bg-white p-2 sm:p-3 rounded-lg shadow-xl w-auto max-w-[90vw] max-h-[90vh] relative transform scale-95 opacity-0">
+            <button id="closeCollageDetailModal" class="absolute top-2 right-2 text-3xl text-primary hover:text-accent leading-none z-20 bg-white bg-opacity-70 rounded-full w-10 h-10 flex items-center justify-center">×</button>
+            <div id="collageDetailModalBody" class="w-full h-full flex items-center justify-center">
+                <img src="" alt="Enlarged Collage" class="block max-w-full max-h-full object-contain rounded-md">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Collage Carousel JavaScript (self-contained for collages.html)
+        const collageSlidesContainer = document.getElementById('collageSlides');
+        if (collageSlidesContainer) {
+            const collageSlides = collageSlidesContainer.querySelectorAll('.collage-carousel-slide');
+            const collagePrevBtn = document.getElementById('collagePrevBtn');
+            const collageNextBtn = document.getElementById('collageNextBtn');
+            let currentCollageIndex = 0;
+
+            function showCollageSlide(index) {
+                if (!collageSlidesContainer || collageSlides.length === 0) return;
+                if (index >= collageSlides.length) index = 0;
+                if (index < 0) index = collageSlides.length - 1;
+                
+                collageSlidesContainer.style.transform = `translateX(-${index * 100}%)`;
+                currentCollageIndex = index;
+            }
+
+            if (collagePrevBtn) {
+                collagePrevBtn.addEventListener('click', () => {
+                    showCollageSlide(currentCollageIndex - 1);
+                });
+            }
+            if (collageNextBtn) {
+                collageNextBtn.addEventListener('click', () => {
+                    showCollageSlide(currentCollageIndex + 1);
+                });
+            }
+            if (collageSlides.length > 0) showCollageSlide(0); 
+        } else {
+            console.warn("Collage slides container 'collageSlides' not found.");
+        }
+
+        // Collage Detail Modal JavaScript (self-contained for collages.html)
+        const collageDetailModal = document.getElementById('collageDetailModal');
+        const collageDetailModalContent = collageDetailModal ? collageDetailModal.querySelector('.modal-content') : null;
+        const closeCollageDetailModalButton = document.getElementById('closeCollageDetailModal');
+        const collageThumbnails = document.querySelectorAll('.collage-thumbnail');
+        const collageDetailImage = collageDetailModal ? collageDetailModal.querySelector('#collageDetailModalBody img') : null;
+
+        if (collageDetailModal && collageDetailModalContent && closeCollageDetailModalButton && collageDetailImage) {
+            const openCollageDetailModal = (src, alt) => {
+                collageDetailImage.src = src;
+                collageDetailImage.alt = alt || 'Enlarged Collage';
+                collageDetailModal.classList.remove('hidden');
+                setTimeout(() => {
+                    collageDetailModal.classList.remove('opacity-0');
+                    collageDetailModalContent.classList.remove('scale-95', 'opacity-0');
+                }, 10);
+            };
+
+            const closeTheCollageDetailModal = () => {
+                collageDetailModal.classList.add('opacity-0');
+                collageDetailModalContent.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    collageDetailModal.classList.add('hidden');
+                    collageDetailImage.src = ''; 
+                }, 300);
+            };
+
+            collageThumbnails.forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    openCollageDetailModal(thumb.src, thumb.alt);
+                });
+            });
+
+            closeCollageDetailModalButton.addEventListener('click', closeTheCollageDetailModal);
+            collageDetailModal.addEventListener('click', (event) => {
+                if (event.target === collageDetailModal) closeTheCollageDetailModal();
+            });
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && !collageDetailModal.classList.contains('hidden')) {
+                    closeTheCollageDetailModal();
+                }
+            });
+        } else {
+            console.warn("Collage detail modal elements not fully found.");
+        }
+    </script>
+
+</body>
+</html>
