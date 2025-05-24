@@ -219,7 +219,7 @@ textarea:focus {
 .collage-carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px; 
+    max-width: 800px; /* UPDATED: Increased max-width */
     margin-left: auto;  
     margin-right: auto;
     overflow: hidden !important;  /* CRITICAL: Ensures other slides are hidden */
@@ -231,7 +231,7 @@ textarea:focus {
 .collage-carousel-slides {
     display: flex !important; /* CRITICAL: Arranges slides horizontally */
     transition: transform 0.5s ease-in-out;
-    height: 180px; /* UPDATED: Reduced height for smaller thumbnails */
+    height: 400px; /* UPDATED: Increased height for larger thumbnails/previews */
 }
 
 .collage-carousel-slide {
@@ -357,5 +357,11 @@ textarea:focus {
 @media (max-width: 768px) {
     body { 
         padding-top: 4rem; 
+    }
+    .collage-carousel-slides {
+        height: 300px; /* Slightly smaller height for carousel on mobile */
+    }
+    .collage-carousel-container {
+        max-width: 95%; /* Allow more width on mobile */
     }
 }
